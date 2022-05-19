@@ -21,4 +21,4 @@ function main(input) {
   }
 }
 
-main("cat batman latt matter");
+main("cat batman latt matter cat matter bat break cat");
