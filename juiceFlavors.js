@@ -4,15 +4,15 @@ function solve(input) {
   let bottles = [];
 
   completeInfo.forEach((element) => {
-    let lineInfo = element.split(" => ");
-    let [juice, amount] = lineInfo;
+
+    let [juice, amount] = element.split(" => ");
     let current = {
       juice,
       amount: Number(amount),
     };
 
     let found = arr.find((x) => x.juice === juice);
-
+    
     if (!found) {
       arr.push(current);
       if (current.amount >= 1000) {
